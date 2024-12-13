@@ -14,13 +14,13 @@ fun QrScannerApp(
 
     NavHost(
         navController = navController,
-        startDestination = ""
+        startDestination = "home"
     ) {
         composable("home") {
-
+            HomeScreen(navController = navController)
         }
         composable("scan") {
-
+            CameraScreen(navController = navController)
         }
     }
 }
